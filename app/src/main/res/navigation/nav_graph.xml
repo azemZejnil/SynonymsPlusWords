@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/wordListFragment">
+
+    <fragment
+        android:id="@+id/wordListFragment"
+        android:name="com.example.wordsnsynonyms.view.SearchWordsFragment"
+        android:label="fragment_word_list"
+        tools:layout="@layout/fragment_word_list" >
+        <action
+            android:id="@+id/wordList_addword"
+            app:destination="@id/addNewWordFragment"
+            app:popUpTo="@id/addNewWordFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/wordList_findSynonym"
+            app:destination="@id/findSynonymsFragment"
+            app:popUpTo="@id/findSynonymsFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewWordFragment"
+        android:name="com.example.wordsnsynonyms.view.AddNewWordFragment"
+        android:label="fragment_add_new_word"
+        tools:layout="@layout/fragment_add_new_word" >
+        <action
+            android:id="@+id/addWord_wordList"
+            app:destination="@id/wordListFragment"
+            app:popUpTo="@id/wordListFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/findSynonymsFragment"
+        android:name="com.example.wordsnsynonyms.view.FindSynonymsFragment"
+        android:label="fragment_find_synonyms"
+        tools:layout="@layout/fragment_find_synonyms" >
+        <action
+            android:id="@+id/findSynonyms_wordList"
+            app:destination="@id/wordListFragment"
+            app:popUpTo="@id/wordListFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/findSynonyms_newWord"
+            app:destination="@id/addNewWordFragment"
+            app:popUpTo="@id/addNewWordFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <argument
+            android:name="askedWord"
+            app:argType="string" />
+    </fragment>
+</navigation>

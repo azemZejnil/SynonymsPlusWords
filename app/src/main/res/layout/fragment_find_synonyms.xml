@@ -1,0 +1,72 @@
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".view.FindSynonymsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    >
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="KEYWORD"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/keyword"
+            android:layout_width="match_parent"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:text="RESULTS"
+            android:textSize="12sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/synonyms"
+            android:layout_below="@id/keyword"
+            android:textSize="20sp"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/searchWordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/synonyms"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Search new word"
+        android:padding="10dp"
+        android:backgroundTint="@color/teal_700"
+        />
+
+    <Button
+        android:id="@+id/addWordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchWordBtn"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Add new word"
+        android:backgroundTint="@color/teal_700"
+        />
+
+</RelativeLayout>
+
+

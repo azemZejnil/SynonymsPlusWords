@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.AddNewWordFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/keywordInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:helperText="Required"
+        app:helperTextTextColor="#FF0000"
+        app:counterMaxLength="50"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Keyword"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/keywordInputLayoutET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/synonymInputLayout"
+        android:layout_below="@id/keywordInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:helperText="Required"
+        app:helperTextTextColor="#FF0000"
+        app:counterMaxLength="50"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="92dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Synonym"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/synonymInputLayoutET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addSynonymBtn"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginRight="32dp"
+        android:text="+"
+        android:textSize="22sp"
+        android:backgroundTint="@color/teal_700"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="4dp"
+        android:orientation="horizontal"
+        android:scrollbars="vertical"
+        android:layout_margin="32dp"
+        android:layout_below="@id/synonymInputLayout"/>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="SUBMIT"
+        android:backgroundTint="@color/teal_700"
+        />
+
+</RelativeLayout>
