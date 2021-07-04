@@ -1,7 +1,7 @@
-package com.example.wordsnsynonyms.presenter
+package com.example.synonymspluswords.presenter
 
 import com.example.wordsnsynonyms.contracts.Contract
-import com.example.wordsnsynonyms.model.WordsModel
+import com.example.synonymspluswords.model.WordsModel
 import javax.inject.Inject
 
 class WordsPresenter
