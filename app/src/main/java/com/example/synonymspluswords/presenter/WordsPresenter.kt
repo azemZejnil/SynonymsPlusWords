@@ -1,4 +1,4 @@
-package com.example.synonymspluswords.presenter
+package com.example.wordsnsynonyms.presenter
 
 import com.example.wordsnsynonyms.contracts.Contract
 import com.example.synonymspluswords.model.WordsModel

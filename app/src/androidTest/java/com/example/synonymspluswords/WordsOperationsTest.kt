@@ -2,8 +2,8 @@ package com.example.synonymspluswords
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.SmallTest
-import com.example.synonymspluswords.model.WordsModel
-import com.example.synonymspluswords.presenter.WordsPresenter
+import com.example.wordsnsynonyms.model.WordsModel
+import com.example.wordsnsynonyms.presenter.WordsPresenter
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Before

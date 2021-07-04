@@ -1,4 +1,4 @@
-package com.example.synonymspluswords.model
+package com.example.wordsnsynonyms.model
 
 import com.example.wordsnsynonyms.contracts.Contract
 import javax.inject.Inject
