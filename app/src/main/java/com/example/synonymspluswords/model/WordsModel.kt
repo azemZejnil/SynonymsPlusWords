@@ -34,8 +34,8 @@ constructor() : Contract.WordsModelContract
             }
         }
         if(wordsToSynonyms.containsKey(word)){
-            val listOfSynonyms = synonymsToWords[word]!!.plus(synonyms)
-            synonymsToWords.put(word, listOfSynonyms as MutableList<String>)
+            val listOfSynonyms = wordsToSynonyms[word]!!.plus(synonyms)
+            wordsToSynonyms.put(word, listOfSynonyms as MutableList<String>)
         }
         else{
             wordsToSynonyms.put(word, synonyms)
