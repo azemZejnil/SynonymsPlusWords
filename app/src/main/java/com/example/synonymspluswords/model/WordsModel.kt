@@ -55,7 +55,7 @@ constructor() : Contract.WordsModelContract
         if(results.size < 1)
             results = results.plus("No results found") as MutableList<String>
 
-        return results
+        return results.distinct() as MutableList<String>
     }
 
     fun getWordsList(): MutableSet<String>{
